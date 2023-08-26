@@ -4,7 +4,7 @@ from datetime import timedelta
 
 app = Flask(__name__)
 oauth = OAuth(app)
-app.secret_key = 'd40e6a1f4db7df587ca7d201422c5f6c' # 用'generate_self_secret.py'生成
+app.secret_key = '82b256e8f698031589ac80f4ee5d726a' # 用'generate_self_secret.py'生成
 app.permanent_session_lifetime = timedelta(hours=1)
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['SESSION_COOKIE_HTTPONLY'] = True
