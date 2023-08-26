@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Pinterest.iml" filepath="$PROJECT_DIR$/.idea/Pinterest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Github_Oauth.iml" filepath="$PROJECT_DIR$/.idea/Github_Oauth.iml" />
     </modules>
   </component>
 </project>
