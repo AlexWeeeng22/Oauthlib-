@@ -44,13 +44,15 @@ def github_authorize():
 
     session['github_data'] = {
         'username': resp['login'],
+        'id':resp['id'],
         'email': resp.get('email', 'No email provided by GitHub'),
         'avatar_url': resp['avatar_url'],
         'bio': resp.get('bio', 'No bio provided by GitHub'),
         'public_repos': resp['public_repos'],
         'followers': resp['followers'],
         'following': resp['following'],
-        'created_at': resp['created_at']
+        'created_at': resp['created_at'],
+        'updated_at':resp['updated_at']
     }
 
     print("You are successfully signed in using github")
@@ -74,16 +76,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-
-# 如果将来想启用此路由，只需取消注释
 '''
-# page--1
-# http://127.0.0.1:5000/
-@app.route('/')
-def show_login():
-    return render_template('index.html')
-
-
 
 app = Flask(__name__)
 
