@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}</h1>
+    < img src="{{ user.avatar_url }}" alt="{{ user.username }}" width="100">
+    <p>Email: {{ user.email }}</p >
+    <p>Bio: {{ user.bio }}</p >
+    <p>Public Repositories: {{ user.public_repos }}</p >
+    <p>Followers: {{ user.followers }}</p >
+    <p>Following: {{ user.following }}</p >
+    <p>Joined GitHub on: {{ user.created_at }}</p >
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
+
